@@ -55,7 +55,7 @@ function App() {
                 <div >
                     <h3>Hobbies</h3>
                     <ol >
-                        {info.hobby.map(x => <li key={x}>{x}</li>)}
+                        {info.hobby.sort((a,b)=>a.localeCompare(b)).map(x => <li key={x}>{x}</li>)}
                     </ol>
                 </div>
                 <CharacterList />
